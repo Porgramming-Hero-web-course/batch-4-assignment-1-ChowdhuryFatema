@@ -1,16 +1,16 @@
-# How to handle asynchronous operations using async/await over callback/promise TypeScript.
+## How to handle asynchronous operations using async/await over callback/promise TypeScript.
 
 When you're building apps, there are many tasks that take time to complete, such as loading data from an API or reading a file from your computer. These tasks are called **asynchronous** operations. Asynchronous operations allow your app to keep running while waiting for these tasks to finish, so your users don’t experience delays or freezes.
 
 In TypeScript (and JavaScript), there are a few ways to handle these tasks: **callbacks**, **promises**, and the modern **`async/await`** syntax. In this blog, we will talk about why `async/await` is often the best way to handle asynchronous operations, especially in TypeScript.
 
-## 1. What is Asynchronous Code?
+### 1. What is Asynchronous Code?
 
 Normally, when your app runs, it follows a set of instructions in order. It waits for one instruction to finish before moving on to the next one. But some tasks, like fetching data from the internet, can take a long time. If your app waits for these tasks to finish before moving on, it can slow down or even freeze.
 
 That’s where **asynchronous code** comes in. Asynchronous code lets your app continue running while waiting for a task to finish. This is done by running these tasks in the background and notifying your app when they're done.
 
-## 2. How We Used to Handle Asynchronous Code
+### 2. How We Used to Handle Asynchronous Code
 
 ### **Callbacks**
 
@@ -26,7 +26,7 @@ To make things clearer, JavaScript introduced **promises**. A promise is an obje
 
 Promises are an improvement over callbacks because they avoid callback hell, but they can still become hard to manage if you need to chain a lot of operations or handle errors in complex ways.
 
-## 3. The Modern Way: `async/await`
+### 3. The Modern Way: `async/await`
 
 ### **What is `async/await`?**
 
@@ -57,7 +57,7 @@ If you have many asynchronous operations, such as fetching data from multiple so
 
 TypeScript works beautifully with `async/await`. It provides better type-checking and helps catch errors during development. This is especially useful when you are dealing with complex data or making API calls where you need to ensure the data is correctly structured.
 
-## 4. When to Use `async/await`
+### 4. When to Use `async/await`
 
 While `async/await` is generally the easiest and most efficient way to handle asynchronous code, there are some situations where you might want to use promises or callbacks. 
 
