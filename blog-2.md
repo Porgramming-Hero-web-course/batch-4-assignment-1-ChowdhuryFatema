@@ -1,4 +1,4 @@
-# Making Asynchronous Code Simpler in TypeScript with `async/await`
+# How to handle asynchronous operations using async/await over callback/promise TypeScript.
 
 When you're building apps, there are many tasks that take time to complete, such as loading data from an API or reading a file from your computer. These tasks are called **asynchronous** operations. Asynchronous operations allow your app to keep running while waiting for these tasks to finish, so your users don’t experience delays or freezes.
 
